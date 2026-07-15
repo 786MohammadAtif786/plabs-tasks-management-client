@@ -1,42 +1,3 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { ToastContainer } from "react-toastify";
-// import { AuthProvider } from "./context/AuthContext";
-// import Navbar from "./components/Navbar";
-// import Auth from "./pages/Auth";
-// import PublicRoute from "./components/PublicRoute";
-// import PrivateRoute from "./components/PrivateRoute";
-
-// <Routes>
-//   <Route
-//     path="/login"
-//     element={
-//       <PublicRoute>
-//         <Auth />
-//       </PublicRoute>
-//     }
-//   />
-//   {/* checkout jaise protected pages ho to aise wrap karo: */}
-//   {/* <Route path="/checkout" element={<PrivateRoute><Checkout /></PrivateRoute>} /> */}
-// </Routes>
-// // baaki tumhare existing pages/components
-
-// function App() {
-//   return (
-//     <AuthProvider>
-//       <BrowserRouter>
-//         <Navbar />
-//         <Routes>
-//           <Route path="/login" element={<Auth />} />
-//           {/* baaki tumhare existing routes yahan */}
-//         </Routes>
-//         <ToastContainer position="top-right" autoClose={3000} />
-//       </BrowserRouter>
-//     </AuthProvider>
-//   );
-// }
-
-// export default App;
-
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -45,8 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthProvider } from "./context/AuthContext";
 import Navbar from "./components/Navbar";
 import Auth from "./pages/Auth";
-import PublicRoute from "./components/PublicRoute";
-import PrivateRoute from "./components/PrivateRoute";
+import PublicRoute from "./components/Publicroute";
+import PrivateRoute from "./components/Privateroute";
 import AddTask from "./pages/AddTask";
 import MyTasks from "./pages/MyTasks";
 import EditTask from "./pages/EditTask";
