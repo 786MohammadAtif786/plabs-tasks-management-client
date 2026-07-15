@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import { updateProfile, deleteAccount } from "../api/UserApi";
+import { updateProfile, deleteAccount } from "../api/Userapi";
 import { useAuth } from "../context/AuthContext"; // apna existing AuthContext path daal dena
 
 const Settings = () => {
